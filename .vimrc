@@ -14,10 +14,10 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'derekwyatt/vim-scala'
 
-" Bundle 'altercation/vim-colors-solarized'
 "Bundle 'leo256'
 " Bundle 'tpope/vim-vividchalk'
 Bundle 'morhetz/gruvbox'
+" Bundle 'altercation/vim-colors-solarized'
 " Bundle 'frederich/gvimfullscreen_win32'
 Bundle 'xolox/vim-shell'
 Bundle 'mru.vim'
@@ -41,6 +41,7 @@ Bundle 'mustache/vim-mode'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'YankRing.vim'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'dsawardekar/ember.vim'
 " Coffee
 Bundle 'kchmck/vim-coffee-script'
 " Scala
@@ -56,8 +57,10 @@ Bundle 'Shutnik/jshint2.vim'
 
 set tags=tags;/
 set background=dark
+set t_Co=256
 " colorscheme vividchalk
 colorscheme gruvbox
+" colorscheme solarized
 " ...
 syntax enable
 filetype plugin indent on     " required!
