@@ -11,7 +11,6 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
 Bundle 'derekwyatt/vim-scala'
 
 "Bundle 'leo256'
@@ -22,7 +21,6 @@ Bundle 'morhetz/gruvbox'
 Bundle 'xolox/vim-shell'
 Bundle 'mru.vim'
 Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-shell'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
@@ -54,6 +52,9 @@ Bundle 'wavded/vim-stylus'
 " JavaScript
 "Bundle 'wookiehangover/jshint.vim'
 Bundle 'Shutnik/jshint2.vim'
+
+"Vmux
+Bundle 'benmills/vimux'
 
 set tags=tags;/
 set background=dark
@@ -124,7 +125,7 @@ set expandtab
 set number
 
 " disable vim backup
-set noswapfile
+"set noswapfile
 
 " Airline
 let g:airline_powerline_fonts = 1
