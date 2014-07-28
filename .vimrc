@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'derekwyatt/vim-scala'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'pangloss/vim-javascript'
 
 "Bundle 'leo256'
 " Bundle 'tpope/vim-vividchalk'
@@ -112,7 +113,7 @@ map <C-l> <C-W>l
 let NERDTreeIgnore = ['\.pyc$']
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/]\.(git|hg|svn)|target|bin|node_modules|bower_components$',
+  \ 'dir': '\v[\/]\.(git|hg|svn)|target|bin|node_modules|bower_components|tmp$',
   \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ 'link': 'a_bad_sym_link$',
   \ }
@@ -121,9 +122,9 @@ let g:ctrlp_custom_ignore = {
 " set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2
 
+set expandtab
 set tabstop=2
 set shiftwidth=2
-set expandtab
 set number
 
 " disable vim backup
