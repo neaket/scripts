@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'derekwyatt/vim-scala'
+Bundle 'airblade/vim-gitgutter'
 
 "Bundle 'leo256'
 " Bundle 'tpope/vim-vividchalk'
@@ -195,8 +196,8 @@ inoremap <silent><C-Right> <C-o>:call search('\C\<\<Bar>\%(^\<Bar>[^'.g:camelcha
 vnoremap <silent><C-Left> :<C-U>call search('\C\<\<Bar>\%(^\<Bar>[^'.g:camelchar.']\@<=\)['.g:camelchar.']\<Bar>['.g:camelchar.']\ze\%([^'.g:camelchar.']\&\>\@!\)\<Bar>\%^','bW')<CR>v`>o
 vnoremap <silent><C-Right> <Esc>`>:<C-U>call search('\C\<\<Bar>\%(^\<Bar>[^'.g:camelchar.']\@<=\)['.g:camelchar.']\<Bar>['.g:camelchar.']\ze\%([^'.g:camelchar.']\&\>\@!\)\<Bar>\%$','W')<CR>v`<o
 
-# Pymode
-# disable rope lookup
+" Pymode
+" disable rope lookup
 let g:pymode_rope_lookup_project = 0
 
 
