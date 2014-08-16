@@ -12,6 +12,8 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'derekwyatt/vim-scala'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'pangloss/vim-javascript'
 
 "Bundle 'leo256'
 " Bundle 'tpope/vim-vividchalk'
@@ -120,9 +122,9 @@ let g:ctrlp_custom_ignore = {
 " set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2
 
+set expandtab
 set tabstop=2
 set shiftwidth=2
-set expandtab
 set number
 
 " disable vim backup
