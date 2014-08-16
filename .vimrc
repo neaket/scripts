@@ -35,7 +35,7 @@ Bundle 'Shougo/neocomplcache.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
 Bundle 'closetag.vim'
-Bundle 'mustache/vim-mode'
+Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'YankRing.vim'
 Bundle 'scrooloose/nerdcommenter'
@@ -111,7 +111,7 @@ map <C-l> <C-W>l
 let NERDTreeIgnore = ['\.pyc$']
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\v[\/]\.(git|hg|svn)|target|bin|node_modules|bower_components$',
+  \ 'dir': '\v[\/]\.(git|hg|svn)|target|bin|node_modules|bower_components|tmp$',
   \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ 'link': 'a_bad_sym_link$',
   \ }
