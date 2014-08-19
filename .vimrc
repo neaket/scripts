@@ -48,7 +48,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'neaket/sbt-vim'
 Bundle 'gre/play2vim'
 " Python
-Bundle 'klen/python-mode'
+"Bundle 'klen/python-mode'
 " Stylus
 Bundle 'wavded/vim-stylus'
 " JavaScript
@@ -201,4 +201,5 @@ vnoremap <silent><C-Right> <Esc>`>:<C-U>call search('\C\<\<Bar>\%(^\<Bar>[^'.g:c
 " disable rope lookup
 let g:pymode_rope_lookup_project = 0
 
-
+" PYTHON
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
