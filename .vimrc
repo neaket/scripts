@@ -1,12 +1,12 @@
 ﻿set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
 " My Bundles here:
 "
@@ -31,7 +31,7 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'garbas/vim-snipmate'
 " Bundle 'Lokaltog/vim-powerline'
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 " Bundle 'Lokaltog/powerline'
 Bundle 'Shougo/neocomplcache.vim'
 Bundle 'tpope/vim-surround'
@@ -41,11 +41,10 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'YankRing.vim'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'dsawardekar/ember.vim'
+" Bundle 'dsawardekar/ember.vim'
 " Coffee
 Bundle 'kchmck/vim-coffee-script'
 " Scala
-Bundle 'neaket/sbt-vim'
 Bundle 'gre/play2vim'
 " Python
 "Bundle 'klen/python-mode'
@@ -59,15 +58,17 @@ Bundle 'Shutnik/jshint2.vim'
 "Vmux
 Bundle 'benmills/vimux'
 
+call vundle#end()         " required
+filetype plugin indent on     " required!
+
 set tags=tags;/
 set background=dark
 set t_Co=256
 " colorscheme vividchalk
-colorscheme gruvbox
 " colorscheme solarized
+colorscheme gruvbox
 " ...
 syntax enable
-filetype plugin indent on     " required!
 "
 " Brief help
 " :BundleList          - list configured bundles
