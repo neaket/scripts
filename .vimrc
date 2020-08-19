@@ -204,3 +204,7 @@ let g:pymode_rope_lookup_project = 0
 
 " PYTHON
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
+
+" modeline
+set modeline
+set modelines=5
