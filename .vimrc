@@ -58,6 +58,9 @@ Bundle 'Shutnik/jshint2.vim'
 "Vmux
 Bundle 'benmills/vimux'
 
+" VimWiki / jrnl
+Bundle 'vimwiki/vimwiki'
+
 call vundle#end()         " required
 filetype plugin indent on     " required!
 
