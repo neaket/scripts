@@ -60,6 +60,7 @@ Bundle 'benmills/vimux'
 
 " VimWiki / jrnl
 Bundle 'vimwiki/vimwiki'
+Bundle 'itchyny/calendar.vim'
 
 call vundle#end()         " required
 filetype plugin indent on     " required!
