@@ -11,7 +11,7 @@ Bundle 'VundleVim/Vundle.vim'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'derekwyatt/vim-scala'
+" Bundle 'derekwyatt/vim-scala'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'pangloss/vim-javascript'
 
@@ -29,7 +29,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'fisadev/vim-ctrlp-cmdpalette'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'garbas/vim-snipmate'
+" Bundle 'garbas/vim-snipmate'
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 " Bundle 'Lokaltog/powerline'
@@ -43,9 +43,9 @@ Bundle 'YankRing.vim'
 Bundle 'scrooloose/nerdcommenter'
 " Bundle 'dsawardekar/ember.vim'
 " Coffee
-Bundle 'kchmck/vim-coffee-script'
+" Bundle 'kchmck/vim-coffee-script'
 " Scala
-Bundle 'gre/play2vim'
+" Bundle 'gre/play2vim'
 " Python
 "Bundle 'klen/python-mode'
 " Stylus
@@ -55,12 +55,31 @@ Bundle 'wavded/vim-stylus'
 "Bundle 'hallettj/jshint.vim'
 Bundle 'Shutnik/jshint2.vim'
 
+
+" 2020-Q3
+" Typescript
+Bundle 'leafgarland/typescript-vim'
+
 "Vmux
 Bundle 'benmills/vimux'
 
 " VimWiki / jrnl
 Bundle 'vimwiki/vimwiki'
 Bundle 'itchyny/calendar.vim'
+
+Bundle 'junegunn/fzf'
+Bundle 'junegunn/fzf.vim'
+
+Bundle 'majutsushi/tagbar'
+
+Bundle 'dense-analysis/ale'
+
+Bundle 'valloric/youcompleteme'
+
+" Dracula THeme
+Bundle 'dracula/vim'
+
+" Tagbar
 
 call vundle#end()         " required
 filetype plugin indent on     " required!
@@ -70,7 +89,8 @@ set background=dark
 set t_Co=256
 " colorscheme vividchalk
 " colorscheme solarized
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme dracula
 " ...
 syntax enable
 "
@@ -212,3 +232,11 @@ autocmd FileType python setlocal shiftwidth=4 tabstop=4
 " modeline
 set modeline
 set modelines=5
+
+" windows nerdtree
+let g:NERDTreeDirArrowExpandable="+" 
+let g:NERDTreeDirArrowCollapsible="~"
+
+" FSF (find files)
+map ; :Files<CR>
+let $FSF_DEFAULT_COMMAND = 'ag -g ""' " ignore gitignore files
