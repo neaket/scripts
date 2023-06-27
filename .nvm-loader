@@ -1,0 +1,24 @@
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [ -f .nvmrc ]; then
+    local node_version="$(nvm version)"
+    local nvmrc_node_version=$(nvm version "$(cat ".nvmrc")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ -f package.json ]; then
+    local node_version="$(nvm version)"
+    local engines_node_version=$(nvm version "$(jq -r ".engines.node" package.json | grep -o "[0-9.]*")")
+    if [ "$engines_node_version" = "N/A" ]; then
+      nvm install "$engines_node_version"
+    elif [ "$engines_node_version" != "$node_version" ]; then
+      nvm use "$engines_node_version"
+    fi
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
